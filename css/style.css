@@ -5,10 +5,6 @@
     box-sizing: border-box;
 }
 
-.debug{
-    border: 1px solid red;
-}
-
 :root{
     --grey: #4a4a4a;
     --white: #ffffff;
@@ -126,8 +122,26 @@ footer{
     width: 100%;
 }
 
-footer ul li i{
-    font-size: 30px;
+footer .mic-camera ul li .mini-box{
+    position: relative;
+    width: 60px;
+}
+
+footer * ul li a i{
+    font-size: 22px;
+}
+
+footer ul li a .fa-angle-up{
+    font-size: 12px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 2px;
+}
+
+footer .mic-camera ul li a .mini-box .fa-angle-up:hover{
+    background-color: rgba(150, 150, 150, 0.5);
+    border-radius: 5px;
 }
 
 footer ul li p{
@@ -135,20 +149,32 @@ footer ul li p{
     padding-top: 10px;
 }
 
+footer ul li{
+    padding: 5px;
+}
+
+footer ul li:hover{
+    background-color: rgba(90, 90, 90, 0.5);
+    border-radius: 10px;
+}
+
 footer .mic-camera{
-    width: 150px;
+    min-width: 150px;
     text-align: center;
-    padding: 5px 10px;
 }
 
 footer .main-menu{
-    flex-basis: 33%;
+    min-width: 500px;
     text-align: center;
-    padding: 5px 10px;
 }
 
-footer .main-menu ul li:nth-of-type(4) i{
+footer .main-menu ul li .share a{
     color: var(--green-share);
+}
+
+footer .main-menu ul li .share a + i{
+    color: var(--white);
+    font-size: 12px;
 }
 
 footer .end-meeting{
